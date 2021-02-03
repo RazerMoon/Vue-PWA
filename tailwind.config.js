@@ -8,6 +8,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        "maxlg": {"max": "1024px"}
+      },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },

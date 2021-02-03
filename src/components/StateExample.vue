@@ -2,7 +2,7 @@
   <div>
     <h2>Simple reactive state example</h2>
     <p>Time passed since you rendered this page: {{ getTime }}</p>
-    <div class="flex">
+    <div class="flex justify-center sm:justify-start">
       <span class="inline-flex mr-2 rounded-md shadow-sm">
         <button
           type="button"
