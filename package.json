@@ -2,16 +2,17 @@
   "name": "vue-test",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "start": "yarn dev",
     "lint": "eslint . --ext .js,.ts,.vue",
-    "lint:fix": "eslint . --ext .js,.ts,.vue --fix"
+    "dev": "vite",
+    "lint:fix": "eslint . --ext .js,.ts,.vue --fix",
+    "start": "yarn dev"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.0",
     "@vitejs/plugin-vue": "^1.1.0",
+    "register-service-worker": "^1.7.1",
     "tailwindcss": "^2.0.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.2"
@@ -20,6 +21,7 @@
     "@types/node": "^14.14.22",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/eslint-config-typescript": "^7.0.0",
     "autoprefixer": "^10.2.3",
