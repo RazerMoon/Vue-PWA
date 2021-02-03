@@ -5,7 +5,9 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default {
   plugins: [vue(), VitePWA({
     manifest: {
-      theme_color: "#4DBA87",
+      name: "Vue PWA",
+      short_name: "Vue PWA",
+      theme_color: "#FF5454",
       icons: [
         {
           src: "./img/icons/android-chrome-192x192.png",
