@@ -20,8 +20,8 @@ if (import.meta.hot) {
 }
 if (import.meta.hot) {
   import.meta.hot?.accept('./routes.ts', ({ routes }) => {
+    const removeRoutes: (() => void)[] = []
     for (const removeRoute of removeRoutes) removeRoute()
-    removeRoutes = []
     for (const route of routes) {
       removeRoutes.push(router.addRoute(route))
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class="prose maxlg:prose-sm max-w-none text-center sm:text-left">
+  <div class="prose maxlg:prose-sm dark:prose-light bg-gray-200 dark:bg-gray-900 shadow-md p-4 rounded-md max-w-none text-center sm:text-left">
     <h1>{{ msg }}</h1>
     <p class="lead">
       This is some example text.
