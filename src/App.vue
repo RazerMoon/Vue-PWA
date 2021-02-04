@@ -1,6 +1,6 @@
 <template>
   <div :class="{dark: darkMode}">
-    <div class="bg-gray-50 dark:bg-gray-700 h-screen">
+    <div class="bg-gray-50 dark:bg-gray-700 min-h-screen h-full">
       <div class="bg-gray-200 dark:bg-gray-900 p-2 px-4">
         <div class="flex justify-between items-center max-w-5xl mx-auto">
           <h1 class="font-semibold dark:text-white">

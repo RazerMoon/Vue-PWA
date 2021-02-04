@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.article {
+  @apply prose maxlg:prose-sm dark:prose-light bg-gray-200 dark:bg-gray-900 shadow-md p-4 rounded-md max-w-none text-center sm:text-left;
+}

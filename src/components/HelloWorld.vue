@@ -1,9 +1,11 @@
 <template>
-  <div class="prose maxlg:prose-sm dark:prose-light bg-gray-200 dark:bg-gray-900 shadow-md p-4 rounded-md max-w-none text-center sm:text-left">
+  <div class="article">
     <h1>{{ msg }}</h1>
     <p class="lead">
       This is some example text.
     </p>
+    <!-- eslint-disable-next-line vue/singleline-html-element-content-newline -->
+    <p>Here is <router-link to="/about">another page</router-link>.</p>
     <StateExample />
   </div>
 </template>

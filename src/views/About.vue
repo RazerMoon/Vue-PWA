@@ -1,5 +1,5 @@
 <template>
-  <div class="prose max-w-none">
+  <div class="article">
     <h1>About</h1>
     <p class="lead">
       Voluptatibus maxime fuga, ratione repellat illum voluptas illo dolor aspernatur autem quae voluptatum fugit eligendi optio obcaecati repellendus. Earum nostrum officia impedit?
