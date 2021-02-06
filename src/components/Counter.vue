@@ -1,5 +1,8 @@
 <template>
-  <p>{{ msg }}<pre class="w-60">{{ getTime }}</pre></p>
+  <div class="flex flex-col">
+    <p>{{ msg }}</p>
+    <pre class="pretime w-60 self-center sm:self-auto">{{ getTime }}</pre>
+  </div>
 </template>
 
 <script lang="ts">
@@ -43,3 +46,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+  .pretime {
+    margin-top: auto !important;
+  }
+</style>
