@@ -1,7 +1,11 @@
 <template>
   <div>
     <h2>Simple reactive state example</h2>
-    <p>Time passed since you rendered this page: {{ getTime }}</p>
+    <Counter
+      global-name="timer"
+      msg="Time passed since you rendered this component for the first time:"
+    />
+    <Counter />
     <div class="flex justify-center sm:justify-start">
       <span class="inline-flex mr-2 rounded-md shadow-sm">
         <button
@@ -26,26 +30,17 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, ref } from "vue";
+import { defineComponent, ref } from "vue";
+import Counter from '../components/Counter.vue'
 
 export default defineComponent({
+  components: {
+    Counter,
+  },
+
   setup() {
-    let timer = ref(0)
-
-    const getTime = computed(() => {
-      return `${Math.floor(timer.value/60)} minutes ${timer.value-Math.floor(timer.value/60)*60} seconds`;
-    })
-
-    onMounted(async() => {
-      setInterval(() => {
-        timer.value++
-      }, 1000)
-    })
-
     return {
       count: ref(0),
-      timer,
-      getTime
     };
   },
 });
